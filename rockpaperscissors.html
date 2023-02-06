@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <Script>
+
+        /*get computers random choice for rock/paper/scissors */
+        function getComputerChoice(){
+            
+            const choices = ["Rock", "Paper", "Scissors"];
+            const mynumber =  Math.floor(Math.random()* choices.length) ;
+            return choices[mynumber];
+        }
+
+        function gameRound(playerSelection, computerSelection){
+                playerstring = playerSelection.toLowerCase();
+                computerstring = computerSelection.toLowerCase();
+                
+                if (playerstring === computerstring){
+                    return "You Tied!";
+                } 
+                
+                if (playerstring === "rock"){
+                    if (computerstring === "paper"){
+                        return "You lose! paper beats rock."
+                    }
+                    else {
+                        return "You win! rock beats scissors."
+                    }
+                }
+                if (playerstring === "paper") {
+                    if (computerstring === "scissors"){
+                        return "You lose! scissors beats paper."
+                    }  
+                    else {
+                        return "You win! paper beats rock."
+                    }
+                }
+                if (playerstring === "scissors"){
+                    if (computerstring === "rock"){
+                        return "You lose! rock beats scissors."
+                    }
+                    else {
+                        return "You win! scissors beats paper."
+                    }
+                }
+
+            }  
+                    
+
+        function game(){
+
+            let score;
+
+            let playerwincount = 0;
+            let computerwincount = 0;
+
+            for (let i = 0; i < 5; i++){
+                const playerSelection = prompt("Player 1, enter your choice (rock, paper, scissors):");
+                const computerSelection = getComputerChoice();
+                let roundresult = gameRound(playerSelection, computerSelection)
+                console.log(roundresult);
+
+
+                if (roundresult.slice(0,9) === "You lose!"){
+                    computerwincount++;
+                }
+                if (roundresult.slice(0,8) === "You win!"){
+                    playerwincount++;
+                }
+
+                console.log("Player score:" + playerwincount + " computer score: " + computerwincount);
+            }
+
+            
+        }   
+
+        console.log(game());
+
+    </Script>
+</body>
+</html>
