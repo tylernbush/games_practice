@@ -52,7 +52,7 @@
 
             }  
                     
-
+        /* plays 5 games of rock, paper, scissors. Also keeps score and tells you who won at the end. */
         function game(){
 
             let score;
@@ -75,6 +75,18 @@
                 }
 
                 console.log("Player score:" + playerwincount + " computer score: " + computerwincount);
+
+                if (i === 4){
+                    if (playerwincount > computerwincount){
+                        console.log("Player wins the best of 5!")
+                    }
+                    if (computerwincount > playerwincount){
+                        console.log("The Computer won the best of 5, sorry!")
+                    }
+                    if (computerwincount === playerwincount){
+                        console.log("You tied the computer in a best of 5!")
+                    }
+                }
             }
 
             
