@@ -1,0 +1,195 @@
+
+body {
+    display:flex;
+    margin:0;
+    flex-direction: column;
+    width:100%;
+    font-family: "BentonSansLight", Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 60px;
+    font-family:'Megrim', cursive;
+    text-shadow: 0 0 5px #0bf4f3,
+    0 0 10px #0bf4f3,
+    0 0 20px #0bf4f3,
+    0 0 40px #0bf4f3,
+    0 0 80px #0bf4f3;
+  }
+
+  .title {
+    display:flex;
+    justify-content: center;
+  
+
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    height: 400px; 
+    background-color: black;
+  }
+
+
+  .rockbutton {
+    display: flex;
+    flex: 1;
+    justify-content:flex-end;
+  }
+
+  .rockbutton :hover {
+    box-shadow: 0 0 10px 5px rgb(240, 155, 243);
+  }
+
+  .paperbutton {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .paperbutton img {
+    object-fit:cover;
+  }
+
+  .paperbutton :hover {
+    box-shadow: 0 0 10px 5px rgb(92, 167, 253);
+  }
+
+  .scissorbutton {
+    display: flex;
+    justify-content:flex-start;
+    flex: 1;
+  }
+
+  .scissorbutton img {
+    object-fit:cover;
+  }
+
+  .scissorbutton :hover{
+    box-shadow: 0 0 10px 5px rgb(160, 250, 57);
+  }
+
+  .restartbutton {
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .scorecontainer {
+    display:flex;
+    justify-content:center;
+    gap: 50px;
+  }
+
+  .tiecontainer {
+    display:flex;
+    justify-content: center;
+  }
+
+  .winner {
+    display:flex;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  div {
+    font-size:40px;
+    font-family:'Megrim', cursive;
+    text-shadow: 0 0 5px #0bf4f3,
+    0 0 10px #0bf4f3,
+    0 0 20px #0bf4f3,
+    0 0 40px #0bf4f3,
+    0 0 80px #0bf4f3;
+  }
+
+
+
+  .custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-6 {
+    background: #a1db66;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 5px #8ce436;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:hover{
+    background: transparent;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #8ce436;
+    box-shadow: 0 0 5px #8ce436;
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    background: #8ce436;
+    box-shadow: 0 0 5px #8ce436;
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }

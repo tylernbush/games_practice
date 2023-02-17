@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" type="text/css" href="index-styling.css">
+    <script src = "rps.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class = 'title'>Rock, Paper, Scissors!</h1>
+    </header>
+    <div class = 'button'>
+        <div class = 'rockbutton' id = 'rockbtn'>
+            <img src="images/rock2.png">
+        </div>
+        <div class = 'paperbutton' id = 'paperbtn'>
+            <img src="images/paper2.png">
+        </div>
+        <div class = 'scissorbutton' id = 'scissorbtn'>
+            <img src="images/scissor3.png">
+        </div>
+    </div>
+    <div class = 'restartbutton'>
+        <button class="custom-btn btn-6" id = 'restartbtn'><span>RESTART</span></button>
+    </div>
+    <div class = "scorecontainer">
+        <div id = 'playerscore'> Player: 0</div>
+        <div id = 'computerscore'>Computer: 0</div>
+    </div>
+        <div class="tiecontainer" id = 'tiecount'>Tied: 0 </div>
+    <div class="winner">
+        <div>And the winner after 5 rounds is:</div>
+        <div id = 'winner'></div>
+    </div>
+    
+</body>
+</html>
